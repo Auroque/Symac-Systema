@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>Symac Gestão</title>
+
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+		<!-- page specific plugin styles -->
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+
+		<!-- resources symac -->
+		<link rel="stylesheet" href="assets/css/symac.css" />
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default ace-save-state">
+			<div class="navbar-container ace-save-state" id="navbar-container">
+				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+					<span class="sr-only">Toggle sidebar</span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="navbar-header pull-left">
+					<a href="index.html" class="navbar-brand">
+						<small style="font-weight: bolder;">
+						<!--
+							<i class="fa fa-leaf"></i>
+					    -->
+							Symac Gestão
+						</small>
+					</a>
+				</div>
+
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+					
+						<li class="light-blue dropdown-modal">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="assets/images/avatars/customer-service.png" alt="Demo,Foto" />
+								<span class="user-info">
+									<small>Bem vindo,</small>
+									Demo
+								</span>
+
+								<i class="ace-icon fa fa-caret-down"></i>
+							</a>
+
+							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-cog"></i>
+										Configurações
+									</a>
+								</li>
+
+								<li>
+									<a href="profile.html">
+										<i class="ace-icon fa fa-user"></i>
+										Perfil
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-power-off"></i>
+										Sair
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<div class="main-container ace-save-state" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.loadState('main-container')}catch(e){}
+			</script>
+
+			<div id="sidebar" class="sidebar responsive ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+				
+				<!-- menu-symac -->
+				<ul class="s-menu">
+                <li class="m_item">
+                    <a href="#" class="i_link">
+                        <i class="icon icon-32 icon-arquivo i_icon"></i>
+                        <span class="i_label mm">Arquivos</span>
+                    </a>
+                    <!-- -->
+                    <ul class="submenu">
+                    	<li class="m_item">
+                    	   <a href="#" class="i_link">
+                               <i class="icon icon-16 icon-arquivo i_icon"></i>
+                               <span class="i_label">Pessoas</span>
+                            </a>
+
+                            <ul class="submenu">
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-arquivo i_icon"></i>
+                                    <span class="i_label">Pessoas Física/Jurídica</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-arquivo i_icon"></i>
+                                    <span class="i_label">Perfil de Relacionamento</span>
+                                </a>
+                               </li>
+                            </ul>
+                    	</li>
+
+                    	<li class="m_item">
+                    	   <a href="#" class="i_link">
+                               <i class="icon icon-16 icon-produtos i_icon"></i>
+                               <span class="i_label">Produtos</span>
+                            </a>
+                            <ul class="submenu">
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Grupos</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Subgrupos</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Marcas</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Categorias</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Localização</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Itens Grandes</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Fabricante</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Combos/Kits</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Índice de Produção</span>
+                                </a>
+                               </li>
+                            </ul>
+                    	</li>
+
+                    	<li class="m_item">
+                    	   <a href="#" class="i_link">
+                               <i class="icon icon-16 icon-dindin i_icon"></i>
+                               <span class="i_label">Financeiros</span>
+                            </a>
+                            <ul class="submenu">
+                            	<li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-financeiro i_icon"></i>
+                                    <span class="i_label">Conta Corrente</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-financeiro i_icon"></i>
+                                    <span class="i_label">Eventos de Caixa</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-financeiro i_icon"></i>
+                                    <span class="i_label">Carteiras de Cobrança</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-financeiro i_icon"></i>
+                                    <span class="i_label">Adquirentes Cartões</span>
+                                </a>
+                               </li>
+                               <li class="m_item">
+                               	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-plano-cnt i_icon"></i>
+                                    <span class="i_label">Plano de Contas</span>
+                                </a>
+                               </li>
+                            </ul>
+                    	</li>
+
+                    	<li class="m_item">
+                    	   <a href="#" class="i_link">
+                               <i class="icon icon-16 icon-basico i_icon"></i>
+                               <span class="i_label">Básicos</span>
+                            </a>
+                            <ul class="submenu">
+                              <li class="m_item">
+                              	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-financeiro i_icon"></i>
+                                    <span class="i_label">Empresas</span>
+                                </a>
+                              </li>
+                               <li class="m_item">
+                              	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-user i_icon"></i>
+                                    <span class="i_label">Usuários</span>
+                                </a>
+                              </li>
+                               <li class="m_item">
+                              	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-financeiro i_icon"></i>
+                                    <span class="i_label">Operações</span>
+                                </a>
+                              </li>
+                               <li class="m_item">
+                              	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-forma-pgt i_icon"></i>
+                                    <span class="i_label">Formas de Pagamentos</span>
+                                </a>
+                              </li>
+                               <li class="m_item">
+                              	<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-financeiro i_icon"></i>
+                                    <span class="i_label">Metas e Comissões</span>
+                                </a>
+                              </li>
+                            	
+                            </ul>
+                    	</li>
+
+                    </ul>
+                </li>
+                <!-- fim-arquivo -->
+
+
+                <li class="m_item">
+                     <a href="#" class="i_link">
+                    <i class="icon icon-32 icon-produtos i_icon"></i>
+                    <span class="i_label">Gestão de Produtos</span>
+                  </a>
+                  <ul class="submenu">
+                    	<li class="m_item">
+                    	   <a href="#" class="i_link">
+                               <i class="icon icon-16 icon-produtos i_icon"></i>
+                               <span class="i_label">Extrato</span>
+                            </a>
+                    	</li>
+
+                    	<li class="m_item">
+                    	   <a href="#" class="i_link">
+                               <i class="icon icon-16 icon-estoque i_icon"></i>
+                               <span class="i_label">Estoque</span>
+                            </a>
+                            <ul class="submenu">
+                            	<li class="m_item">
+                            	  <a href="#" class="i_link">
+                                    <i class="icon icon-16 icon-estoque i_icon"></i>
+                                    <span class="i_label">Análise</span>
+                                  </a>
+                            	</li>
+                            	<li class="m_item">
+                            	  <a href="#" class="i_link">
+                                    <i class="icon icon-16 icon-estoque i_icon"></i>
+                                    <span class="i_label">Inventário</span>
+                                  </a>
+                            	</li>
+                            	<li class="m_item">
+                            	  <a href="#" class="i_link">
+                                    <i class="icon icon-16 icon-estoque i_icon"></i>
+                                    <span class="i_label">Ajustes</span>
+                                  </a>
+                            	</li>
+                            </ul>
+                    	</li>
+                    	<li class="m_item">
+                    	   <a href="#" class="i_link">
+                               <i class="icon icon-16 icon-dindin i_icon"></i>
+                               <span class="i_label">Preços</span>
+                            </a>
+                            <ul class="submenu">
+                              <li class="m_item">
+                            	 <a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-dindin i_icon"></i>
+                                   <span class="i_label">Formação(Precificação)</span>
+                                </a>
+                              </li>
+                              <li class="m_item">
+                            	 <a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-dindin i_icon"></i>
+                                   <span class="i_label">Reajustes</span>
+                                </a>
+                              </li>
+                            </ul>
+                    	</li>
+                    	<li class="m_item">
+                    	   <a href="#" class="i_link">
+                               <i class="icon icon-16 icon-produtos i_icon"></i>
+                               <span class="i_label">Promoções</span>
+                            </a>
+                            <ul class="submenu">
+                              <li class="m_item">
+                            	 <a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-promocao i_icon"></i>
+                                   <span class="i_label">Agenda Promocional</span>
+                                </a>
+                              </li>
+                              <li class="m_item">
+                            	 <a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-promocao i_icon"></i>
+                                   <span class="i_label">Promoção</span>
+                                </a>
+                              </li>
+                            </ul>
+                    	</li>
+                    	
+                    </ul>
+                </li>
+                <!-- fim-gestao-produto -->
+
+                <li class="m_item">
+                 <a href="#" class="i_link">
+                    <i class="icon icon-32 icon-compras i_icon"></i>
+                    <span class="i_label">Gestão de Compras</span>
+                 </a>
+                 <ul class="submenu">
+                    	<li class="m_item">
+                    	   <a href="#" class="i_link">
+                               <i class="icon icon-16 icon-compras i_icon"></i>
+                               <span class="i_label">Entradas</span>
+                            </a>
+                    	</li>
+
+                    	<li class="m_item">
+                    	   <a href="#" class="i_link">
+                               <i class="icon icon-16 icon-compras i_icon"></i>
+                               <span class="i_label">Devoluções</span>
+                            </a>
+                    	</li>
+                    </ul>
+                </li>
+                <!-- fim-gestao-compras-->
+
+                <li class="m_item">
+                   <a href="#" class="i_link">
+                    <i class="icon icon-32 icon-financeiro i_icon"></i>
+                    <span class="i_label">Gestão Financeira</span>
+                   <a href="#" class="i_link"></a>
+                   <ul class="submenu">
+                    	<li class="m_item">
+                    	   <a href="#" class="i_link">
+                               <i class="icon icon-16 icon-dindin i_icon"></i>
+                               <span class="i_label">Contas</span>
+                            </a>
+                            <ul class="submenu">
+                            	<li class="m_item">
+                            		<a href="#" class="i_link">
+                               			<i class="icon icon-16 icon-pgt-rec i_icon"></i>
+                               			<span class="i_label">Contas a Pagar</span>
+                                    </a>
+                            	</li>
+                            	<li class="m_item">
+                            		<a href="#" class="i_link">
+                               			<i class="icon icon-16 icon-pgt-rec i_icon"></i>
+                               			<span class="i_label">Contas a Receber</span>
+                                    </a>
+                            	</li>
+                            </ul>
+                    	</li>
+                    	<li class="m_item">
+                    		<a href="#" class="i_link">
+                               <i class="icon icon-16 icon-dindin i_icon"></i>
+                               <span class="i_label">Caixa/Bancos</span>
+                            </a>
+    						<ul class="submenu">
+    							<li class="m_item">
+                    		      <a href="#" class="i_link">
+                                     <i class="icon icon-16 icon-dindin i_icon"></i>
+                                     <span class="i_label">Caixa Individual</span>
+                                  </a>
+                    	        </li>
+                    	        <li class="m_item">
+                    		      <a href="#" class="i_link">
+                                     <i class="icon icon-16 icon-dindin i_icon"></i>
+                                     <span class="i_label">Caixa Geral</span>
+                                  </a>
+                    	        </li>
+                    	        <li class="m_item">
+                    		      <a href="#" class="i_link">
+                                     <i class="icon icon-16 icon-dindin i_icon"></i>
+                                     <span class="i_label">Conta Corrente</span>
+                                  </a>
+                    	        </li>
+                    	        <li class="m_item">
+                    		      <a href="#" class="i_link">
+                                     <i class="icon icon-16 icon-dindin i_icon"></i>
+                                     <span class="i_label">Cobrança Bancária</span>
+                                  </a>
+                    	        </li>
+    						</ul>
+                    	</li>
+                    	<li class="m_item">
+                    		<a href="#" class="i_link">
+                               <i class="icon icon-16 icon-dindin i_icon"></i>
+                               <span class="i_label">Gerencial</span>
+                            </a>
+                            <ul class="submenu" style="top: -123px;">
+                            	<li class="m_item">
+                    		    	<a href="#" class="i_link">
+                              			<i class="icon icon-16 icon-dindin i_icon"></i>
+                               			<span class="i_label">Contabilidade Gerencial</span>
+                                	</a>
+                    			</li>
+                    			<li class="m_item">
+                    		    	<a href="#" class="i_link">
+                              			<i class="icon icon-16 icon-dindin i_icon"></i>
+                               			<span class="i_label">Fluxo de Caixa</span>
+                                	</a>
+                    			</li>
+                    			<li class="m_item">
+                    		    	<a href="#" class="i_link">
+                              			<i class="icon icon-16 icon-dindin i_icon"></i>
+                               			<span class="i_label">Balancete Gerencial</span>
+                                	</a>
+                    			</li>
+                    			<li class="m_item">
+                    		    	<a href="#" class="i_link">
+                              			<i class="icon icon-16 icon-dindin i_icon"></i>
+                               			<span class="i_label">DRE</span>
+                                	</a>
+                    			</li>
+                    			<li class="m_item">
+                    		    	<a href="#" class="i_link">
+                              			<i class="icon icon-16 icon-dindin i_icon"></i>
+                               			<span class="i_label">Previsão de Caixa</span>
+                                	</a>
+                    			</li>
+                    			<li class="m_item">
+                    		    	<a href="#" class="i_link">
+                              			<i class="icon icon-16 icon-dindin i_icon"></i>
+                               			<span class="i_label">Orçamento Empresarial</span>
+                                	</a>
+                    			</li>
+                            </ul>
+                    	</li>
+                    </ul>
+                </li>
+                <!-- fim-gestao-financeira -->
+
+                <li class="m_item">
+                   <a href="#" class="i_link">
+                    <i class="icon icon-32 icon-gerencial i_icon"></i>
+                    <span class="i_label">Assessor Gerencial</span>
+                  </a>
+                  <ul class="submenu" style="top:-3px;">
+                  	 	<li class="m_item">
+                   			<a href="#" class="i_link">
+                    			<i class="icon icon-16 icon-contabilidade i_icon"></i>
+                    			<span class="i_label">Análise Gerencial</span>
+                  			</a>
+                		</li>
+                		<li class="m_item">
+                   			<a href="#" class="i_link">
+                    			<i class="icon icon-16 icon-contabilidade i_icon"></i>
+                    			<span class="i_label">Ranking de Vendas</span>
+                  			</a>
+                		</li>
+                		<li class="m_item">
+                   			<a href="#" class="i_link">
+                    			<i class="icon icon-16 icon-contabilidade i_icon"></i>
+                    			<span class="i_label">Curva ABC</span>
+                  			</a>
+                		</li>
+                		<li class="m_item">
+                   			<a href="#" class="i_link">
+                    			<i class="icon icon-16 icon-contabilidade i_icon"></i>
+                    			<span class="i_label">Análise de Saída</span>
+                  			</a>
+                		</li>
+                		<li class="m_item">
+                   			<a href="#" class="i_link">
+                    			<i class="icon icon-16 icon-contabilidade i_icon"></i>
+                    			<span class="i_label">Análise de Entrada</span>
+                  			</a>
+                		</li>
+                		<li class="m_item">
+                   			<a href="#" class="i_link">
+                    			<i class="icon icon-16 icon-contabilidade i_icon"></i>
+                    			<span class="i_label">Comissões</span>
+                  			</a>
+                		</li>
+                  </ul>
+                </li>
+                 <!-- fim-gerencial -->
+
+                <li class="m_item">
+                  <a href="#" class="i_link">
+                    <i class="icon icon-32 icon-utilitarios i_icon"></i>
+                    <span class="i_label">Utilitários</span>
+                  </a>
+                  <ul class="submenu">
+                  	<li class="m_item">
+                        <a href="#" class="i_link">
+                           <i class="icon icon-16 icon-utilitarios i_icon"></i>
+                           <span class="i_label">Nf-e/NFC-e</span>
+                        </a>
+                        <ul class="submenu" style="top: -82px;">
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                           			<i class="icon icon-16 icon-utilitarios i_icon"></i>
+                           			<span class="i_label">Consulta Notas</span>
+                        		</a>
+                    		</li>
+                    		<li class="m_item">
+                        		<a href="#" class="i_link">
+                           			<i class="icon icon-16 icon-utilitarios i_icon"></i>
+                           			<span class="i_label">Carta de Correção</span>
+                        		</a>
+                    		</li>
+                    		<li class="m_item">
+                        		<a href="#" class="i_link">
+                           			<i class="icon icon-16 icon-utilitarios i_icon"></i>
+                           			<span class="i_label">Cancelamento</span>
+                        		</a>
+                    		</li>
+                    		<li class="m_item">
+                        		<a href="#" class="i_link">
+                           			<i class="icon icon-16 icon-utilitarios i_icon"></i>
+                           			<span class="i_label">Inutilização</span>
+                        		</a>
+                    		</li>
+                        </ul>
+                    </li>
+                    <li class="m_item">
+                        <a href="#" class="i_link">
+                           <i class="icon icon-16 icon-contabilidade i_icon"></i>
+                           <span class="i_label">Contabilidade</span>
+                        </a>
+                        <ul class="submenu" style="top: -82px;">
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                           			<i class="icon icon-16 icon-pgt-rec i_icon"></i>
+                           			<span class="i_label">SPED Fiscal</span>
+                        		</a>
+                    		</li>
+                    		<li class="m_item">
+                        		<a href="#" class="i_link">
+                           			<i class="icon icon-16 icon-contabilidade i_icon"></i>
+                           			<span class="i_label">SPED Contribuições</span>
+                        		</a>
+                    		</li>
+                    		<li class="m_item">
+                        		<a href="#" class="i_link">
+                           			<i class="icon icon-16 icon-doc i_icon"></i>
+                           			<span class="i_label">SEF e e-Doc</span>
+                        		</a>
+                    		</li>
+                    		<li class="m_item">
+                        		<a href="#" class="i_link">
+                           			<i class="icon icon-16 icon-doc i_icon"></i>
+                           			<span class="i_label">Sintegra</span>
+                        		</a>
+                    		</li>
+                        </ul>
+                    </li>
+                    <li class="m_item">
+                        <a href="#" class="i_link">
+                           <i class="icon icon-16 icon-config i_icon"></i>
+                           <span class="i_label">Configurações</span>
+                        </a>
+                        <ul class="submenu">
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-config i_icon"></i>
+                                   <span class="i_label">Configurações</span>
+                                </a>
+                        	</li>
+                        </ul>
+                    </li>
+                    <li class="m_item">
+                        <a href="#" class="i_link">
+                           <i class="icon icon-16 icon-utilitarios i_icon"></i>
+                           <span class="i_label">Ferramentas</span>
+                        </a>
+                    </li>
+                   </ul>
+                </li>
+                 <!-- fim-utilitarios -->
+
+                <li class="m_item">
+                <a href="#" class="i_link">
+                    <i class="icon icon-32 icon-relatorios i_icon"></i>
+                    <span class="i_label">Relatórios</span>
+                </a>
+                <ul class="submenu" style="top: -180px;">
+                   <li class="m_item">
+                        <a href="#" class="i_link">
+                            <i class="icon icon-16 icon-produtos i_icon"></i>
+                            <span class="i_label">Pessoas</span>
+                        </a>
+                    </li>
+                    <li class="m_item">
+                        <a href="#" class="i_link">
+                            <i class="icon icon-16 icon-produtos i_icon"></i>
+                            <span class="i_label">Produtos</span>
+                        </a>
+                        <ul class="submenu">
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Peços</span>
+                               </a>
+                        	</li>
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Estoque</span>
+                               </a>
+                        	</li>
+                        </ul>
+                    </li>
+                    <li class="m_item">
+                        <a href="#" class="i_link">
+                            <i class="icon icon-16 icon-produtos i_icon"></i>
+                            <span class="i_label">Entradas</span>
+                        </a>
+                        <ul class="submenu">
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Análise de Entrada</span>
+                               </a>
+                        	</li>
+                        </ul>
+                    </li>
+                    <li class="m_item">
+                        <a href="#" class="i_link">
+                            <i class="icon icon-16 icon-produtos i_icon"></i>
+                            <span class="i_label">Saídas</span>
+                        </a>
+                        <ul class="submenu">
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Análise de Vendas</span>
+                               </a>
+                        	</li>
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Comissões</span>
+                               </a>
+                        	</li>
+                        </ul>
+                    </li>
+                    <li class="m_item">
+                        <a href="#" class="i_link">
+                            <i class="icon icon-16 icon-produtos i_icon"></i>
+                            <span class="i_label">Financeiro</span>
+                        </a>
+                        <ul class="submenu" style="top: -123px;">
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-pgt-rec i_icon"></i>
+                                    <span class="i_label">Contas a Pagar</span>
+                               </a>
+                        	</li>
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-pgt-rec i_icon"></i>
+                                    <span class="i_label">Contas a Receber</span>
+                               </a>
+                        	</li>
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-pgt-rec i_icon"></i>
+                                    <span class="i_label">Conta Corrente</span>
+                               </a>
+                        	</li>
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-pgt-rec i_icon"></i>
+                                    <span class="i_label">Caixa Geral</span>
+                               </a>
+                        	</li>
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-pgt-rec i_icon"></i>
+                                    <span class="i_label">Fluxo de Caixa</span>
+                               </a>
+                        	</li>
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-pgt-rec i_icon"></i>
+                                    <span class="i_label">Balancete Gerencial</span>
+                               </a>
+                        	</li>
+                        </ul>
+                    </li>
+                    <li class="m_item">
+                        <a href="#" class="i_link">
+                            <i class="icon icon-16 icon-plano-cnt i_icon"></i>
+                            <span class="i_label">Gerencial</span>
+                        </a>
+                         <ul class="submenu">
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Ranking Vendas</span>
+                               </a>
+                        	</li>
+                        	<li class="m_item">
+                        		<a href="#" class="i_link">
+                                   <i class="icon icon-16 icon-produtos i_icon"></i>
+                                    <span class="i_label">Classificação ABC</span>
+                               </a>
+                        	</li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            <!-- lista-menu -->
+             <!-- /.nav-list -->
+
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+			</div>
+
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+						<ul class="breadcrumb">
+							<li>
+								<i class="ace-icon fa fa-home home-icon"></i>
+								<a href="#">Home</a>
+							</li>
+							<!--
+							<li>
+								<a href="#">Other Pages</a>
+							</li>
+							-->
+							<li class="active">Principal</li>
+						</ul><!-- /.breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Buscar ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="ace-icon fa fa-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- /.nav-search -->
+					</div>
+
+					<div class="page-content">
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- conteudo -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+
+			<div class="footer">
+				<div class="footer-inner">
+					<div class="footer-content">
+						<span class="bigger-120">
+							<span class="blue bolder">Mac’Sistem</span>
+							Symac &copy; 2017
+						</span>
+
+						&nbsp; &nbsp;
+						<span class="action-buttons">
+							<a href="#">
+								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<!-- ace scripts -->
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+	</body>
+</html>

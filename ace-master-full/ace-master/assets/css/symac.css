@@ -1,0 +1,169 @@
+           .icon {
+                display:inline-block;
+                background-repeat: no-repeat;
+                background-position: 0;
+            }
+            .icon-40 {
+                background-size: 40px auto;
+                width: 40px;
+                height: 40px;
+            }
+            .icon-80 {
+                background-size: 80px auto;
+                width: 80px;
+                height: 80px;
+            }
+            .icon-32 {
+                background-size: 32px auto;
+                width: 32px;
+                height: 32px;
+            }
+            .icon-24 {
+                background-size: 24px auto;
+                width: 24px;
+                height: 24px;
+            }
+            .icon-16 {
+                background-size: 16px auto;
+                width: 16px;
+                height: 16px;
+            }
+            .icon-arquivo{
+                background-image: url(../img/arquivo.png);
+            }
+            .icon-compras{
+                background-image: url("../img/compras.png");
+            }
+            .icon-contabilidade{
+                background-image: url("../img/contabilidade.png");
+            }
+            .icon-financeiro{
+                background-image: url("../img/financeiro.png");
+            }
+            .icon-gerencial {
+                background-image: url("../img/gerencial.png");
+            }
+            .icon-produtos {
+                background-image: url("../img/produtos.png");
+            }
+            .icon-relatorios {
+                background-image: url("../img/reports.png");
+            }
+            .icon-utilitarios{
+                background-image: url("../img/util.png");
+            }
+            .icon-basico{
+                background-image: url("../img/basico.png");
+            }
+            .icon-user{
+                background-image: url("../img/user.png");
+            }
+            .icon-dindin{
+                background-image: url("../img/fin.png");
+            }
+            .icon-estoque{
+                background-image: url("../img/estoque.png");
+            }
+            .icon-forma-pgt{
+                background-image: url("../img/fpgt.png");
+            }
+            .icon-plano-cnt{
+                background-image: url("../img/plano.png");
+            }
+            .icon-promocao{
+                background-image: url("../img/help.png");
+            }
+            .icon-pgt-rec{
+                background-image: url("../img/receber.png");
+            }
+            .icon-doc{
+                background-image: url("../img/doc.png");
+            }
+            .icon-config{
+                background-image: url("../img/config.png");
+            }
+            .s-menu{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                /*width: 190px;*/
+            }
+            .s-menu li:hover{
+                color: #fff;
+                background-color: #FDF067;
+            }
+
+            .s-menu .m_item{
+                display: block;
+                height: 65px;
+                padding: 2px;
+                margin: 0 0 0px 0;
+                position: relative;
+                border-bottom: 1px solid #CCCCCC;
+
+            }
+
+            .s-menu .m_item:hover .submenu{
+                display: block;
+                z-index: 1026;
+            }
+            .s-menu .m_item .i_link{
+                text-decoration: none;
+                
+            }
+            .s-menu .m_item .i_icon{
+                display: block;
+                margin: 2px auto 2px;
+                
+            }
+            .s-menu .m_item .i_label{
+                display: block;
+                text-align: center;
+                margin-bottom: 2px;
+            }
+            .s-menu .m_item .submenu{
+                position: absolute;
+                left: 170px;
+                top: 0;
+                display:none;
+            }
+            
+            .s-menu .m_item:hover .submenu .submenu{
+                display: none;
+            }
+            .s-menu .submenu .m_item:hover .submenu{
+                display: block;
+                vertical-align: baseline;
+                
+            }
+            .s-menu .m_item .submenu .m_item{
+                width: 160px;
+                border: 1px solid #CCCCCC;
+                margin-bottom: 0px;
+                height: 40px;
+            }
+            .s-menu .m_item .submenu .m_item .submenu .m_item{
+                width: 160px;
+                border: 1px solid #CCCCCC;
+                margin-bottom: 0px;
+                height: 40px;
+                left: -28px;
+
+            }
+            /*-----------------------------------------------*/
+            ..sidebar.menu-min .s-menu{
+                width: 43px;
+            }
+            .sidebar.menu-min .s-menu>li>a>.i_label{
+                display: none;
+            }
+            .sidebar.menu-min .s-menu>li{
+                height: 45px;   
+            }
+            .sidebar.menu-min .s-menu>li>a>.i_icon{
+                margin: 0 auto;
+            }
+            
+            .sidebar.menu-min .s-menu>li>ul{
+                left: 23px;
+            }

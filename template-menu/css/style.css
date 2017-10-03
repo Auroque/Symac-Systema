@@ -1,0 +1,252 @@
+/*Symac Gestão Style*/
+
+h1, h2, h3, h4, h5, h6, p, li, a, span{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.nav-list>li>a{
+	text-decoration: none;
+}
+
+body{
+	margin: 0;
+	padding:0;
+	border:0;
+}
+
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+
+.section-nav{
+	margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-width: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-height: 45px;
+    background: #40a8be;
+}
+
+.container-nav, .container-search{
+	padding-left: 30px;
+	padding-right: 20px;
+}
+
+.logo{
+	float: left;
+}
+
+.logo img{
+	width: 180px;
+    margin-top: 7px;
+
+}
+
+.log{
+	float: right;
+}
+
+.ace-nav{
+	height: 100%;
+    margin: 0!important;
+}
+
+.ace-nav>li>a{
+	line-height: 45px;
+    height: 45px;
+    border-left: 1px solid #2f98af;
+    padding: 0 15px!important;
+    position: relative;
+    float: left;
+}
+
+.ace-nav .nav-user-photo{
+	margin: -4px 8px 0 0;
+    border-radius: 100%;
+    border: 2px solid #FFF;
+    max-width: 40px;
+}
+
+.user-info{
+	max-width: 100px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+    line-height: 30px;
+    position: relative;
+    top: 6px;
+    color: #FFF;
+}
+
+.user-info small{
+	display: block;
+}
+
+.ace-nav>li>a>.ace-icon{
+	display: inline-block;
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+    width: 20px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+	background-color: #2f98af!important;
+}
+
+.open > .dropdown-menu{
+	left: auto;
+    right: -5px;
+    margin-top: 44px;
+}
+
+.open > .dropdown-menu > li > a > i{
+	margin-right: 10px;
+}
+
+.section-search{
+	height: 40px;
+	background-color: #f1f3f2;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.icon-top{
+	text-align: center;
+    min-height: 40px;
+    border-right: 1px solid #dbdbdb;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    border: 0 solid;
+}
+
+.sidbar{
+	width: 15%;
+	height:94vh;
+    float: left;
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #F2F2F2;
+    border-style: solid;
+    border-color: #CCC;
+    border-width: 0 1px 0 0;
+}
+
+.sidbar-pequenos-icones{
+	line-height: 40px;
+}
+
+.main-content{
+	width: 85%;
+	min-height: 100%;
+	float: left;
+}
+
+.inner{
+	width: 100%;
+	min-height: 41px;
+	padding-right: 20px;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #f1f3f2;
+}
+
+.crumb{
+	width: 80%;
+	float: left;
+}
+
+.crumb ul li{
+	line-height: 40px;
+	display: inline;
+}
+
+.crumb ul li a{
+	font-size: 13px;
+}
+
+.crumb ul li::before{
+	content: ">";
+	margin: 0 10px;
+	color: #B2B6BF;
+}
+
+.crumb ul i{
+	line-height: 40px;
+	padding-left: 20px;
+	color: #777;
+	font-size: 20px;
+}
+
+.breadcrumbs{
+	margin-top: 3px;
+	float: right;
+	width: 200px;
+}
+
+.nav-list li{
+	border-color: #e5e5e5;
+	display: block;
+    position: relative;
+    float: none;
+    padding: 0;
+    border-style: solid;
+    border-width: 1px 0 0;
+}
+
+.nav-list li a{
+    display: block;
+    height: 39px;
+    line-height: 17px;
+    padding-left: 7px;
+    text-shadow: none!important;
+    font-size: 13px;
+    position: relative;
+}
+
+.nav-list li:hover::before{
+	display: block;
+}
+
+.nav-list li::before{
+	content: "";
+	display: none;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    z-index: 1;
+    height: 41px;
+    width: 3px;
+    max-width: 3px;
+    overflow: hidden;
+    background-color: #40a8be;
+}
+
+.nav-list li a span{
+	color: #585858;	
+    height: 39px;
+    line-height: 39px;
+    padding-left: 7px;
+    text-shadow: none!important;
+    font-size: 13px;
+}
+
+.nav-list li a:hover{
+    background-color: #FFF;
+}
+
+.nav-list li a span:hover{
+	color: #40a8be;
+}
