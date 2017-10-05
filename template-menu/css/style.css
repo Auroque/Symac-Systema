@@ -30,6 +30,11 @@ ul{
 	border-radius: 0;
 }
 
+.direita{
+    float: right;
+    line-height: 39px;
+    margin-right: 20px;
+}
 
 .section-nav{
 	margin: 0;
@@ -250,6 +255,10 @@ ul{
     padding-left: 7px;
     text-shadow: none!important;
     font-size: 13px;
+}
+
+.nav-list li a label i{
+    margin-right: 20px;
 }
 
 .nav-list li a:hover{
