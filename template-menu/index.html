@@ -56,13 +56,51 @@
 		</div>
 		<ul class="nav-list">
 			<li>
-				<input type="checkbox" id="arquivo" name=""><a href="#"><label for="arquivo">Arquivo</label></a>
+				<input type="checkbox" id="arquivo" name=""><a href="#"><label for="arquivo">Cadastro</label></a>
 				<div class="checkbox-wrapper">
 					<ul class="check-nav">
-						<li><a href="#">Pessoas</a></li>
-						<li><a href="#">Produtos</a></li>
-						<li><a href="#">Financeiros</a></li>
-						<li><a href="#">Básico</a></li>						
+						<li>
+							<a href="#">Pessoas</a>
+							<div class="etiqueta">
+								<ul>
+									<li><a href="#">Pessoas</a></li>
+									<li><a href="#">Nomenclatura de Pessoas</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">Produtos</a>
+							<div class="etiqueta">
+								<ul>
+									<li><a href="#">Produtos</a></li>
+									<li><a href="#">Grupos</a></li>
+									<li><a href="#">Categoria</a></li>
+									<li><a href="#">Marca</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">Usuários</a>
+							<div class="etiqueta">
+								<ul>
+									<li><a href="#">Usuários</a></li>
+									<li><a href="#">Perfil Usuários</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">Grupo Empresas</a></li>
+						<li>
+							<a href="#">Financeiros</a>
+							<div class="etiqueta">
+								<ul>
+									<li><a href="#">Forma Pagamento</a></li>
+									<li><a href="#">Taxas Adquirentes</a></li>
+									<li><a href="#">Conta Corrente</a></li>
+									<li><a href="#">Históricos</a></li>
+									<li><a href="#">Plano de Contas</a></li>
+								</ul>
+							</div>
+						</li>						
 					</ul>
 				</div>
 			</li>
@@ -70,8 +108,7 @@
 				<input type="checkbox" id="compras" name=""><a href="#"><label for="compras">Gestão de Compras</label></a>
 				<div class="checkbox-wrapper">
 					<ul class="check-nav">
-						<li><a href="#">Entrada</a></li>
-						<li><a href="#">Devolução</a></li>					
+						<li><a href="#">Entrada</a></li>					
 					</ul>
 				</div>
 			</li>
@@ -79,9 +116,13 @@
 				<input type="checkbox" id="financeiro" name=""><a href="#"><label for="financeiro">Gestão Financeira</label></a>
 				<div class="checkbox-wrapper">
 					<ul class="check-nav">
-						<li><a href="#">Contas</a></li>
-						<li><a href="#">Caixa/Banco</a></li>
-						<li><a href="#">Gerencial</a></li>						
+						<li><a href="#">Contas Pagar</a></li>
+						<li><a href="#">Contas Receber</a></li>
+						<li><a href="#">Caixa Individual</a></li>						
+						<li><a href="#">Caixa Geral</a></li>						
+						<li><a href="#">Conta Corrente</a></li>						
+						<li><a href="#">Contabilidade Gerencial</a></li>						
+						<li><a href="#">Fluxo de Caixa</a></li>						
 					</ul>
 				</div>
 			</li>
@@ -89,10 +130,8 @@
 				<input type="checkbox" id="produtos" name=""><a href="#"><label for="produtos">Gestão de Produtos</label></a>
 				<div class="checkbox-wrapper">
 					<ul class="check-nav">
-						<li><a href="#">Extratos</a></li>
-						<li><a href="#">Estoque</a></li>
-						<li><a href="#">Preço</a></li>						
-						<li><a href="#">Promoção</a></li>						
+						<li><a href="#">Ajustes</a></li>
+						<li><a href="#">Inventário</a></li>					
 					</ul>
 				</div>
 			</li>
@@ -100,9 +139,9 @@
 				<input type="checkbox" id="contabilidade" name=""><a href="#"><label for="contabilidade">Contabilidade</label></a>
 				<div class="checkbox-wrapper">
 					<ul class="check-nav">
-						<li><a href="#">Contas</a></li>
-						<li><a href="#">Caixa/Banco</a></li>
-						<li><a href="#">Gerencial</a></li>						
+						<li><a href="#">Documentos Emitidos</a></li>
+						<li><a href="#">Cancelamento / Inutilização</a></li>
+						<li><a href="#">Perfil Tributário</a></li>						
 					</ul>
 				</div>
 			</li>
@@ -110,28 +149,20 @@
 				<input type="checkbox" id="gerencial" name=""><a href="#"><label for="gerencial">Assesor Gerencial</label></a>
 				<div class="checkbox-wrapper">
 					<ul class="check-nav">
-						<li><a href="#">Contas</a></li>
-						<li><a href="#">Caixa/Banco</a></li>
-						<li><a href="#">Gerencial</a></li>						
+						<li><a href="#">Ranking de Vendas</a></li>						
 					</ul>
 				</div>
 			</li>
 			<li>
-				<input type="checkbox" id="utilitario" name=""><a href="#"><label for="utilitario">Utilitários</label></a>
-				<div class="checkbox-wrapper">
-					<ul class="check-nav">
-						<li><a href="#">Contas</a></li>
-						<li><a href="#">Caixa/Banco</a></li>
-						<li><a href="#">Gerencial</a></li>						
-					</ul>
-				</div>
+				<a href="#"><label for="utilitario">Utilitários</label></a>
 			</li>
 			<li>
 				<input type="checkbox" id="relatorio" name=""><a href="#"><label for="relatorio">Relatórios</label></a>
 				<div class="checkbox-wrapper">
 					<ul class="check-nav">
-						<li><a href="#">Contas</a></li>
-						<li><a href="#">Caixa/Banco</a></li>
+						<li><a href="#">Compras</a></li>
+						<li><a href="#">Vendas</a></li>
+						<li><a href="#">Financeiro</a></li>						
 						<li><a href="#">Gerencial</a></li>						
 					</ul>
 				</div>
@@ -155,6 +186,12 @@
 	  				<input type="text" class="form-control" placeholder="Busca" aria-describedby="basic-addon1">
 				</div>
 			</div>				
+		</div>
+		<div class="conteudo">
+			<h1>Aqui vai as informações</h1>
+		</div>
+		<div class="footer">
+			<p><span>Mac’Sistem</span> Symac © 2017</p>
 		</div>
 	</div>
 

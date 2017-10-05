@@ -251,6 +251,7 @@ ul{
 
 .nav-list li a:hover{
     background-color: #FFF;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .nav-list li a label:hover{
@@ -258,14 +259,14 @@ ul{
 }
 
 .check-nav li{
-	padding-left: 25px;
 	height: 39px;
 }
 
 .check-nav li a{
+	padding-left: 25px;
 	text-decoration: none;
 	line-height: 39px;
-	color: #848484;
+	color: #585858;
 }
 
 #arquivo, #compras, #financeiro, #produtos, #contabilidade, #gerencial, #utilitario, #relatorio{
@@ -274,8 +275,45 @@ ul{
 
 .checkbox-wrapper{
 	display: none;
+	background-color: #fbfbfb;
 }
 
 input[type="checkbox"]:checked ~ .checkbox-wrapper{
 	display: block;
+}
+
+.check-nav li:hover .etiqueta{
+	display: block;
+}
+
+.etiqueta{
+    top: -1px;
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 99999;
+    left: 100%;
+    background-color: #fbfbfb;
+    border: 1px solid #e5e5e5;
+}
+
+.conteudo{
+	width: 100%;
+	min-height: 400px;
+	padding:0 10px;
+}
+
+.footer{
+	width: 100%;
+	border-top: 3px double #E5E5E5;
+}
+
+.footer p{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.footer p span{
+	font-weight: 700;
+	color: #40a8be;
 }
