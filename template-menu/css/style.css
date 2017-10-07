@@ -285,7 +285,7 @@ ul{
 	color: #585858;
 }
 
-#arquivo, #compras, #financeiro, #produtos, #contabilidade, #gerencial, #utilitario, #relatorio{
+#arquivo, #compras, #financeiro, #produtos, #contabilidade, #gerencial, #utilitario, #relatorio, #responsivo, .fa-bars, #responsivo-icon{
 	display: none;
 }
 
