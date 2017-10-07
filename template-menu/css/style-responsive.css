@@ -1,0 +1,21 @@
+
+/*Arquivo responsável pela responsividade!*/
+
+@media (max-width: 800px){
+	.ace-nav, .input-group, .sidbar{
+		display: none;
+	}
+
+	.container{
+		width: 100%!important;
+	}
+
+	.grafico{
+		    width: calc(100% - 10px);
+		    margin: 10px 5px 0 5px;
+	}
+
+	.main-content{
+		width: 100%;
+	}
+}
