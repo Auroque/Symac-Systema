@@ -240,6 +240,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 grafico">
+						<ul class="nav nav-tabs">
+						  <li role="presentation" class="active"><a href="#">Dia</a></li>
+						  <li role="presentation"><a href="#">Mês</a></li>
+						  <li role="presentation"><a href="#">Ano</a></li>
+						</ul>
 						<canvas id="myChart"></canvas>
 						<script type="text/javascript">
 							var ctx = document.getElementById('myChart').getContext('2d');
@@ -277,6 +282,11 @@
 						</script>
 					</div>
 					<div class="col-md-4 grafico">
+						<ul class="nav nav-tabs">
+						  <li role="presentation" class="active"><a href="#">Dia</a></li>
+						  <li role="presentation"><a href="#">Mês</a></li>
+						  <li role="presentation"><a href="#">Ano</a></li>
+						</ul>
 						<canvas id="myChart-2"></canvas>
 						<script type="text/javascript">
 							var ctx = document.getElementById('myChart-2').getContext('2d');
@@ -314,6 +324,11 @@
 						</script>
 					</div>
 					<div class="col-md-4 grafico">
+						<ul class="nav nav-tabs">
+						  <li role="presentation" class="active"><a href="#">Dia</a></li>
+						  <li role="presentation"><a href="#">Mês</a></li>
+						  <li role="presentation"><a href="#">Ano</a></li>
+						</ul>
 						<canvas id="myChart-3"></canvas>
 						<script type="text/javascript">
 							var ctx = document.getElementById('myChart-3').getContext('2d');
@@ -480,7 +495,96 @@
 						</script>
 					</div>
 					<div class="col-md-6 grafico-3">
-						
+						<canvas id="myChart-6"></canvas>
+						<script type="text/javascript">
+							var ctx = document.getElementById('myChart-6').getContext('2d');
+							var chart = new Chart(ctx, {
+							    // The type of chart we want to create
+							    type: 'line',
+
+							    // The data for our dataset
+							    data: {
+							        labels: [
+							        	"Janeiro", 
+							        	"Fevereiro", 
+							        	"Março",
+							        	"Abril",
+							        	"Maio",
+							        	"Junho",
+							        	"Julho",
+							        	"Agosto",
+							        	"Setembro",
+							        	"Outubro",
+							        	"Novembro",
+							        	"Dezembro",
+							        ],
+							        datasets: [{
+							            label: "ITENS EM ESTOQUE",
+							            backgroundColor: [
+							            	'rgb(83, 174, 83)',
+							            ],
+							            data: [5, 8, 20, 12, 15, 20, 8, 5, 3, 10, 2, 15],							  
+							        }]
+							    },
+
+							    // Configuration options go here
+							    options: {
+							    	title: {
+						            display: true,
+						            text: 'ESTOQUE',
+						            fontSize: 20,
+						        }
+						    }
+							});
+						</script>
+						<canvas id="myChart-7"></canvas>
+						<script type="text/javascript">
+							var ctx = document.getElementById('myChart-7').getContext('2d');
+							var chart = new Chart(ctx, {
+							    // The type of chart we want to create
+							    type: 'line',
+
+							    // The data for our dataset
+							    data: {
+							        labels: [
+							        	"Janeiro", 
+							        	"Fevereiro", 
+							        	"Março",
+							        	"Abril",
+							        	"Maio",
+							        	"Junho",
+							        	"Julho",
+							        	"Agosto",
+							        	"Setembro",
+							        	"Outubro",
+							        	"Novembro",
+							        	"Dezembro",
+							        ],
+							        datasets: [{
+							            label: "PEÇA - CUSTO",
+							            borderColor: [
+							            	'rgb(79, 190, 188)',
+							            ],
+							            backgroundColor: 'transparent',
+							            data: [5, 8, 20, 12, 15, 20, 8, 5, 3, 10, 2, 15],							  
+							        },
+							        {
+							            label: "PEÇA - VENDA",
+							            borderColor: [
+							            	'rgb(83, 174, 83)',
+							            ],
+							            backgroundColor: 'transparent',
+							            data: [3, 7, 2, 8, 7, 4, 2, 6, 7, 18, 4, 20],							  
+							        }
+							        ]
+							    },
+
+							    // Configuration options go here
+							    options: {
+
+						    }
+							});
+						</script>
 					</div>
 				</div>
 			</div>

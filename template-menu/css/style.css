@@ -344,7 +344,7 @@ input[type="checkbox"]:checked ~ .checkbox-wrapper{
     margin: 20px 0 0 20px;
     border-radius: 5px;
     background-color: #ffffff;
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 
 .grafico-2{
@@ -353,7 +353,7 @@ input[type="checkbox"]:checked ~ .checkbox-wrapper{
     margin: 20px 0 0 20px;
     border-radius: 5px;
     background-color: #ffffff;
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 
 .grafico-2 p{
@@ -377,6 +377,19 @@ input[type="checkbox"]:checked ~ .checkbox-wrapper{
     border-radius: 5px;
     background-color: #ffffff;
     padding: 10px 0;
+    padding: 0 10px;
+}
+
+.grafico-3 #title{
+    padding-left: 20px;
+    font-weight: 800;
+    color: #666666;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.grafico-3 #title i{
+    margin-right: 10px;
 }
 
 .footer{
@@ -397,4 +410,8 @@ input[type="checkbox"]:checked ~ .checkbox-wrapper{
 .container{
     width: 100%!important;
     padding: 0 20px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus,.nav-tabs > li.active > a:hover{
+    color: #ffffff;
 }
