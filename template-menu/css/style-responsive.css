@@ -27,14 +27,11 @@
 
 	.sidbar{
 		display: block;
+		height: auto;
 		position: absolute;
     	z-index: 999;
     	width: 80%;
     	border-bottom: 1px solid #ccc;
-	}
-
-	.container{
-		width: 100%!important;
 	}
 
 	.grafico{

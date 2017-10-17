@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style-responsive.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
 <body>
 
@@ -225,24 +226,121 @@
 				</div>
 			</div>				
 		</div>
+
+
+
+
+
+		<!-- Grupo de Gráficos -->
+
+
+
+
 		<div class="section conteudo">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 grafico">
-						Aqui vai o gráfico
+					<div class="col-md-4 grafico">
+						<canvas id="myChart"></canvas>
+						<script type="text/javascript">
+							var ctx = document.getElementById('myChart').getContext('2d');
+							var chart = new Chart(ctx, {
+							    // The type of chart we want to create
+							    type: 'doughnut',
+
+							    // The data for our dataset
+							    data: {
+							        labels: [
+							        	"January", 
+							        	"February", 
+							        	"March", 
+							        ],
+							        datasets: [{
+							            label: "My First dataset",
+							            backgroundColor: [
+							            	'rgb(255, 398, 132)', 
+							            	'rgb(253, 19, 534)', 
+							            	'rgb(155, 899, 132)', 
+							            ],
+							            data: [20, 30, 45],							  
+							        }]
+							    },
+
+							    // Configuration options go here
+							    options: {}
+							});
+						</script>
 					</div>
-					<div class="col-md-6 grafico">
-						Aqui vai o gráfico
+					<div class="col-md-4 grafico">
+						<canvas id="myChart-2"></canvas>
+						<script type="text/javascript">
+							var ctx = document.getElementById('myChart-2').getContext('2d');
+							var chart = new Chart(ctx, {
+							    // The type of chart we want to create
+							    type: 'doughnut',
+
+							    // The data for our dataset
+							    data: {
+							        labels: [
+							        	"Op - 1", 
+							        	"Op - 2", 
+							        	"Op - 3", 
+							        ],
+							        datasets: [{
+							            label: "My First dataset",
+							            backgroundColor: [
+							            	'rgb(255, 199, 232)', 
+							            	'rgb(255, 398, 132)', 
+							            	'rgb(253, 19, 534)', 
+							            ],
+							            data: [8, 10, 5],							  
+							        }]
+							    },
+
+							    // Configuration options go here
+							    options: {}
+							});
+						</script>
 					</div>
-					<div class="col-md-6 grafico">
-						Aqui vai o gráfico
-					</div>
-					<div class="col-md-6 grafico">
-						Aqui vai o gráfico
+					<div class="col-md-4 grafico">
+						<canvas id="myChart-3"></canvas>
+						<script type="text/javascript">
+							var ctx = document.getElementById('myChart-3').getContext('2d');
+							var chart = new Chart(ctx, {
+							    // The type of chart we want to create
+							    type: 'doughnut',
+
+							    // The data for our dataset
+							    data: {
+							        labels: [
+							        	"May", 
+							        	"June", 
+							        	"July"
+							        ],
+							        datasets: [{
+							            label: "My First dataset",
+							            backgroundColor: [
+							            	'rgb(255, 97, 132)', 
+							            	'rgb(251, 199, 132)', 
+							            	'rgb(155, 899, 132)', 
+							            ],
+							            data: [5, 2, 20],							  
+							        }]
+							    },
+
+							    // Configuration options go here
+							    options: {}
+							});
+						</script>
 					</div>
 				</div>
 			</div>
 		</div>
+
+
+		<!-- Fim dos Gráficos -->
+
+
+
 		<div class="section">
 			<div class="container">
 				<div class="row">
