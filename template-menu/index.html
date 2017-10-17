@@ -250,9 +250,9 @@
 							    // The data for our dataset
 							    data: {
 							        labels: [
-							        	"January", 
-							        	"February", 
-							        	"March", 
+							        	"Ricardo", 
+							        	"Paulo", 
+							        	"José", 
 							        ],
 							        datasets: [{
 							            label: "My First dataset",
@@ -266,7 +266,13 @@
 							    },
 
 							    // Configuration options go here
-							    options: {}
+							    options: {
+						        title: {
+						            display: true,
+						            text: 'VENDEDORES',
+						            fontSize: 20,
+						        }
+						    }
 							});
 						</script>
 					</div>
@@ -297,7 +303,13 @@
 							    },
 
 							    // Configuration options go here
-							    options: {}
+							    options: {
+						        title: {
+						            display: true,
+						            text: 'GRUPOS',
+						            fontSize: 20,
+						        }
+						    }
 							});
 						</script>
 					</div>
@@ -312,9 +324,9 @@
 							    // The data for our dataset
 							    data: {
 							        labels: [
-							        	"May", 
-							        	"June", 
-							        	"July"
+							        	"Cartão", 
+							        	"Boleto", 
+							        	"Dinheiro"
 							        ],
 							        datasets: [{
 							            label: "My First dataset",
@@ -328,16 +340,158 @@
 							    },
 
 							    // Configuration options go here
-							    options: {}
+							    options: {
+						        title: {
+						            display: true,
+						            text: 'FORMA DE PAGAMENTO',
+						            fontSize: 20,
+						        }
+						    }
 							});
 						</script>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 grafico-2 verde">
+						<p><i class="fa fa-cubes" aria-hidden="true"></i>   Itens Vendidos</p>
+						<h2>500</h2>
+					</div>
+					<div class="col-md-3 grafico-2 rosa">
+						<p><i class="fa fa-users" aria-hidden="true"></i>   Atendimentos</p>
+						<h2>1600</h2>
+					</div>
+					<div class="col-md-3 grafico-2 cinza">
+						<p><i class="fa fa-ticket" aria-hidden="true"></i>   Ticket Médio</p>
+						<h2>R$ 806,20</h2>
+					</div>
+					<div class="col-md-3 grafico-2 rocho">
+						<p><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>   Vendas</p>
+						<h2>R$ 8990,00</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 grafico-3">
+						<canvas id="myChart-4"></canvas>
+						<script type="text/javascript">
+							var ctx = document.getElementById('myChart-4').getContext('2d');
+							var chart = new Chart(ctx, {
+							    // The type of chart we want to create
+							    type: 'bar',
+
+							    // The data for our dataset
+							    data: {
+							        labels: [
+							        	"Janeiro", 
+							        	"Fevereiro", 
+							        	"Março",
+							        	"Abril",
+							        	"Maio",
+							        	"Junho",
+							        	"Julho",
+							        	"Agosto",
+							        	"Setembro",
+							        	"Outubro",
+							        	"Novembro",
+							        	"Dezembro",
+							        ],
+							        datasets: [{
+							            label: "Ultimos 6 mêses",
+							            backgroundColor: [
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)', 
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            ],
+							            data: [5, 8, 20, 12, 15, 20, 8, 5, 3, 10, 2, 15],							  
+							        }]
+							    },
+
+							    // Configuration options go here
+							    options: {
+						        title: {
+						            display: true,
+						            text: 'VENDAS',
+						            fontSize: 20,
+						        }
+						    }
+							});
+						</script>
+
+						<canvas id="myChart-5"></canvas>
+						<script type="text/javascript">
+							var ctx = document.getElementById('myChart-5').getContext('2d');
+							var chart = new Chart(ctx, {
+							    // The type of chart we want to create
+							    type: 'bar',
+
+							    // The data for our dataset
+							    data: {
+							        labels: [
+							        	"Janeiro", 
+							        	"Fevereiro", 
+							        	"Março",
+							        	"Abril",
+							        	"Maio",
+							        	"Junho",
+							        	"Julho",
+							        	"Agosto",
+							        	"Setembro",
+							        	"Outubro",
+							        	"Novembro",
+							        	"Dezembro",
+							        ],
+							        datasets: [{
+							            label: "Ultimos 6 mêses",
+							            backgroundColor: [
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)', 
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            	'rgb(79, 190, 188)',
+							            ],
+							            data: [5, 8, 20, 12, 15, 20, 8, 5, 3, 10, 2, 15],							  
+							        }]
+							    },
+
+							    // Configuration options go here
+							    options: {
+						        title: {
+						            display: true,
+						            text: 'ATENDIMENTOS',
+						            fontSize: 20,
+						        }
+						    }
+							});
+						</script>
+					</div>
+					<div class="col-md-6 grafico-3">
+						
 					</div>
 				</div>
 			</div>
 		</div>
 
 
+
+
 		<!-- Fim dos Gráficos -->
+
+
 
 
 

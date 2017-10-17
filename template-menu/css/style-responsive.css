@@ -34,7 +34,7 @@
     	border-bottom: 1px solid #ccc;
 	}
 
-	.grafico{
+	.grafico, .grafico-2, .grafico-3{
 		    width: calc(100% - 10px);
 		    margin: 10px 5px 0 5px;
 	}

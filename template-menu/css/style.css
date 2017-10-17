@@ -15,6 +15,22 @@ label{
 	cursor: pointer;
 }
 
+.verde{
+    background-color: #53ae52!important;
+}
+
+.rosa{
+    background-color: #ed547a!important;
+}
+
+.cinza{
+    background-color: #617d88!important;
+}
+
+.rocho{
+    background-color: #9e52ae!important;
+}
+
 .nav-list>li>a{
 	text-decoration: none;
 }
@@ -159,7 +175,7 @@ ul{
     background-color: #F2F2F2;
     border-style: solid;
     border-color: #CCC;
-    border-width: 0 1px 0 0;
+    border-width: 0 1px 1px 0;
 }
 
 .sidbar-pequenos-icones{
@@ -328,6 +344,39 @@ input[type="checkbox"]:checked ~ .checkbox-wrapper{
     margin: 20px 0 0 20px;
     border-radius: 5px;
     background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.grafico-2{
+    width: calc(25% - 20px);
+    border:1px solid #e5e5e5;
+    margin: 20px 0 0 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.grafico-2 p{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    font-size:1.3em;
+}
+
+.grafico-2 h2{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.grafico-3{
+    width: calc(50% - 20px);
+    border:1px solid #e5e5e5;
+    margin: 20px 0 0 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 10px 0;
 }
 
 .footer{
